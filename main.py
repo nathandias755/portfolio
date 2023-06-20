@@ -16,6 +16,12 @@ app = Flask(__name__)
 def index():
     name = 'NATHAN'
     return render_template("index.html",name =name)
+
+@app.route('/floweb')
+
+def floweb():
+    
+    return render_template("floweb.html")
 # main driver function
 if __name__ == '__main__':
  
